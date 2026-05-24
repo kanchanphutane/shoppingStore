@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "pushdeploy": "git add . && git commit -m \"updated\" && git push origin main && ng build customerportal --configuration production --base-href /shoppingStore/ && angular-cli-ghpages --dir=dist/customerportal",
     "deploy": "ng build customerportal --configuration production --base-href /shoppingStore/ && angular-cli-ghpages --dir=dist/customerportal",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
