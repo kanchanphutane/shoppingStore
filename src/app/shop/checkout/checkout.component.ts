@@ -121,7 +121,7 @@ export class CheckoutComponent implements OnInit {
     key: 'pk_test_IMfLDyTjBvG9AK7MNtHntboG00XQFgMOiE',
     locale: 'auto',
     token: function (token: any) {
-      let objPayment = { tokenId: token.id, amount: obj.amount + obj.shippingAmount, description: "Shopping with sahosoft mall - Ajeet Singh - 13-Oct" };
+      let objPayment = { tokenId: token.id, amount: obj.amount + obj.shippingAmount, description: "Shopping with KP51 CodeCraft - Ajeet Singh - 13-Oct" };
       //console.log(token);
       obj.payment = objPayment;
       saveData(obj);
@@ -129,7 +129,7 @@ export class CheckoutComponent implements OnInit {
   });
 
   handler.open({
-    name: 'Sahosoft Mall',
+    name: 'KP51 CodeCraft',
     description: 'ecommerce',
     country: 'INDIA',
     currency: 'INR',
