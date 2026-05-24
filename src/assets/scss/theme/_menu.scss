@@ -1688,10 +1688,10 @@ $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 120px) {
   .brand-logo {
     img {
-      height: 25px;
+      height: 5px;
     }
   }
 }
