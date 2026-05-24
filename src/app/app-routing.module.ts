@@ -5,7 +5,7 @@ import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
  // { path: 'landingpage', component: LangingpageComponent },
-  {path : '', redirectTo : 'home/shop', pathMatch : 'full'},
+  {path : '', redirectTo : 'home/', pathMatch : 'full'},
   {
     path: '', component: MainComponent, children: [
       { path: 'pages', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
