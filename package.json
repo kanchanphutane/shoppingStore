@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy": "ng build customerportal --configuration production --base-href /shoppingStore/ && angular-cli-ghpages --dir=dist/customerportal",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
