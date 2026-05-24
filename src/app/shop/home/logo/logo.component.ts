@@ -52,8 +52,10 @@ export class LogoComponent implements OnInit {
 
   ngOnInit(): void {
     this._httpService.get(environment.BASE_API_PATH + "Brandlogo/GetAll").subscribe(res => {
+      res.data = "assets/images/logo1.jpeg";
       this.logos = res.data;
     });
+    
   }
 
 }
